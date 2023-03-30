@@ -86,7 +86,7 @@ html_theme_options = {
     # "dark_logo": "EY_logo_1.gif",
     "logo": {
           "image_light": "_static/EY_logo_1.gif",
-          "image_dark": "_static/EY_logo_1.gif",
+          "image_dark": "_static/EY_logo_Black.gif",
        },
     "show_nav_level": 2,
     "show_toc_level": 2,

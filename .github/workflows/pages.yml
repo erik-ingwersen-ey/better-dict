@@ -20,7 +20,7 @@ jobs:
       with:
         docs-folder: "docs/"
     # Publish built docs to gh-pages branch.
-    # ===============================
+    # ======================================
     - name: Commit documentation changes
       run: |
         git clone https://github.com/erik-ingwersen-ey/better-dict.git --branch gh-pages --single-branch gh-pages
