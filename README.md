@@ -29,13 +29,9 @@
 
 ## Description
 
-<<<<<<< Updated upstream
 Python dictionary on steroids. The custom dictionary is inspired in
 by the functionalities that [pandas](https://pandas.pydata.org/) offers in
 their `DataFrame` and `Series` classes.
-=======
-Python dictionary revamped.
->>>>>>> Stashed changes
 
 ***
 
@@ -93,6 +89,63 @@ d.to_joblib("d.joblib")
 # Load dictionary from a joblib file:
 d = bd.BetterDict.from_joblib("d.joblib")
 ```
+
+## Q&A
+
+### 1. What is the ``BetterDict`` class and what additional functionality does it provide?
+
+The ``BetterDict`` class is a custom subclass of Python's built-in dict class,
+designed to provide additional functionality for easier and more flexible
+manipulation of dictionaries. The main enhancements include:
+
+* Accessing dictionary keys by value.
+* Manipulating dictionary keys and values using index notation.
+* Accessing and manipulating dictionary values using dot notation.
+* Other features include saving/loading dictionaries to/from files, creating 
+  dictionaries from various data structures, applying functions to 
+  dictionary values and keys, fuzzy key matching, and renaming dictionary keys.
+
+### 2. How can I access and set values in a ``BetterDict`` instance?
+
+Accessing and setting values in a ``BetterDict`` instance is made easy through a
+variety of methods:
+
+* **``Get``/``Set`` values by key:** Use the standard dictionary syntax with square 
+brackets (e.g., ``d["key"]`` and ``d["key"] = value``).
+* **Get/Set multiple values at once:** Supply an iterable of keys
+  (e.g., ``d["key1", "key2"]`` and ``d["key1", "key2"] = value1, value2``).
+* **Index notation:** Use the iloc property to access and set values by index
+  (e.g., ``d.iloc[index]`` and ``d.iloc[index1, index2] = value1, value2``). 
+* Additionally, dot notation can be used to access and set values (e.g., `d.key` and `d.key = value`).
+
+### 3. What are the available I/O operations for ``BetterDict`` and how can I use them?
+
+``BetterDict`` supports I/O operations using the **pickle** and **joblib** libraries,
+allowing you to easily save and load dictionaries to/from files. The main
+methods for I/O operations are:
+
+* **Save with pickle:** Use the `save_pickle` method, supplying the file path
+  (e.g., `d.save_pickle("file_path.pkl")`).
+* **Load with pickle:** Use the `load_pickle` method, supplying the file path
+  (e.g., ``d = BetterDict.load_pickle("file_path.pkl"))``.
+* **Save with joblib:** Use the `save_joblib` method, supplying the file path
+  (e.g., `d.save_joblib("file_path.joblib")`).
+* **Load with joblib:** Use the `load_joblib` method, supplying the file path
+  (e.g., ``d = BetterDict.load_joblib("file_path.joblib")``).
+
+### 4. How can I create a ``BetterDict`` from different data structures like `pandas.DataFrame` or `numpy.ndarray`?
+
+``BetterDict`` offers class methods to create instances from various data
+structures, such as pandas DataFrames, pandas Series, numpy arrays, and lists:
+
+- **From `pandas.DataFrame`:** Use the `from_frame` method (e.g., ``d = BetterDict.from_frame(data_frame))``.
+- **From `pandas.Series`:** Use the `from_series` method (e.g., ``d = BetterDict.from_series(data_series))``.
+- **From `numpy.ndarray`:** No direct method is available, but you can first convert the array to a pandas DataFrame and then use `from_frame`
+  (e.g., ``d = BetterDict.from_frame(pd.DataFrame(array)))``.
+- **From list:** Use the `from_list` method (e.g., ``d = BetterDict.from_list(list_obj))``.
+
+These methods facilitate easy conversion between different data structures and ``BetterDict``.
+
 
 ## Contributing
 
