@@ -1,9 +1,18 @@
+[project]
+name = "better-dict"
+dynamic = ["version"]
+description = "Python dictionary revamped."
+readme = "README.md"
+classifiers = [
+    "Development Status :: 1 - Planning",
+]
+
 [tool.poetry]
 name = "better-dict"
 version = "0.0.1"
 description = "Python dictionary revamped."
 authors = ["Erik Ingwersen <erik.ingwersen@br.ey.com>"]
-license = "MIT"
+license = "LICENSE.md"
 readme = "README.md"
 homepage = "https://github.com/ingwersen-erik/better-dict"
 repository = "https://github.com/ingwersen-erik/better-dict"
@@ -32,6 +41,7 @@ python-dotenv = { version = "^0.19.2", optional = false }
 joblib = "^1.2.0"
 pandas = "^1.5.3"
 numpy = "^1.24.2"
+pytest = "^7.2.2"
 
 
 [tool.poetry.dev-dependencies]
@@ -112,7 +122,11 @@ exclude = '''
 [build-system]
 requires = [
     "poetry-core>=1.0.0",
-    "setuptools >= 40.9.0",
+    "setuptools >= 45",
+    "setuptools_scm[toml]>=6.2",
     "wheel",
 ]
 build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools_scm]
+write_to = "./src/better_dict/_version.py"

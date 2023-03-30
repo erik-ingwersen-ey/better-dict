@@ -1,3 +1,16 @@
+Metadata-Version: 2.1
+Name: better-dict
+Version: 0.1.dev1+gcc8fd61.d20230330
+Summary: Python dictionary revamped.
+Home-page: https://github.com/ingwersen-erik/better-dict
+Author: Erik Ingwersen
+Author-email: erik.ingwersen@br.ey.com
+License: MIT
+Keywords: better-dict
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: AUTHORS.md
+
 ![](docs/_static/EY_logo_5.gif)
 
 # Better Dict
@@ -29,13 +42,7 @@
 
 ## Description
 
-<<<<<<< Updated upstream
-Python dictionary on steroids. The custom dictionary is inspired in
-by the functionalities that [pandas](https://pandas.pydata.org/) offers in
-their `DataFrame` and `Series` classes.
-=======
 Python dictionary revamped.
->>>>>>> Stashed changes
 
 ***
 

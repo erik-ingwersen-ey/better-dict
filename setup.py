@@ -7,6 +7,7 @@ from pathlib import Path
 
 
 requirements_path = Path('requirements.txt').resolve()
+
 if requirements_path.is_file():
     with open(
         requirements_path,
@@ -16,23 +17,17 @@ if requirements_path.is_file():
         mode='r',
     ) as fp:
         requirements = fp.read().splitlines()
-        fp.close()
 else:
     print('No requirements.txt found. Skipping.')
-    # Empty requirements list to avoid error
-    requirements = []
+    requirements = []  # Empty requirements list to avoid errors.
 
 setup(
     name='better-dict',
-    { % - if cookiecutter.setup_py_uses_setuptools_scm == 'y' %}
-    use_scm_version = {
+    use_scm_version={
         'local_scheme': 'dirty-tag',
         'write_to': 'src/better_dict/_version.py',
         'fallback_version': '0.0.1',
     },
-    { % - else %}
-    version = '0.0.1',
-    { % - endif %}
     description="Python dictionary revamped.",
     license="MIT",
     author="Erik Ingwersen",
@@ -48,11 +43,12 @@ setup(
     ],
     package_dir={'': 'src'},
     packages=['better_dict'],
-    entry_points={
-        'console_scripts': [
-            'better_dict=better_dict.cli:main'
-        ]
-    },
+    # entry_points={
+    #     'console_scripts': [
+    #         'better_dict=better_dict.cli:main'
+    #     ]
+    # },
     install_requires=requirements,
     keywords='better-dict',
+    setup_requires=['setuptools_scm'],
 )
