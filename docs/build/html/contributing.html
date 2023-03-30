@@ -1,0 +1,772 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Contributor Guide &#8212; Better Dict  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contributing';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/EY_logo_1.gif" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/EY_logo_1.gif" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="usage.html">
+                        Usage
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="authors.html">
+                        Authors
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="history.html">
+                        History
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="core.html">
+                        Core
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="utils.html">
+                        Utils
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="io.html">
+                        I/O
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="accessors.html">
+                        Accessors
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ingwersen-erik/better-dict" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="usage.html">
+                        Usage
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="authors.html">
+                        Authors
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="history.html">
+                        History
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="core.html">
+                        Core
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="utils.html">
+                        Utils
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="io.html">
+                        I/O
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="accessors.html">
+                        Accessors
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ingwersen-erik/better-dict" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Contributor Guide</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="contributor-guide">
+<h1>Contributor Guide<a class="headerlink" href="#contributor-guide" title="Permalink to this headline">#</a></h1>
+<p>This section specifies the <strong>contributing guidelines</strong> for <em>Better Dict</em> project.</p>
+<p>This open-source project distributed under the <span class="xref myst">MIT License</span>.
+All contributions in the form of bug reports, feature requests, and pull
+requests are welcome.</p>
+<p>Here is a list of important resources for contributors:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ingwersen-erik/better-dict">Source Code</a></p></li>
+<li><p><a class="reference external" href="https://better-dict.readthedocs.io/">Documentation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ingwersen-erik/better-dict/issues">Issue Tracker</a></p></li>
+<li><p><a class="reference internal" href="codeofconduct.html"><span class="doc std std-doc">Code of Conduct</span></a></p></li>
+</ul>
+<section id="how-to-report-a-bug">
+<h2>How to report a bug<a class="headerlink" href="#how-to-report-a-bug" title="Permalink to this headline">#</a></h2>
+<p>Report bugs on the <a class="reference external" href="https://github.com/ingwersen-erik/better-dict/issues">Issue Tracker</a>.</p>
+<p>To make it easier to other teammates to reproduce and identify the root-cause
+of the bug, try to answer the following questions, when filing an issue
+whenever applicable:</p>
+<ul class="simple">
+<li><p>Which operating system and Python version are you using?</p></li>
+<li><p>Which version of this project are you using?</p></li>
+<li><p>What did you do?</p></li>
+<li><p>What did you expect to see?</p></li>
+<li><p>What did you see instead?</p></li>
+</ul>
+<p>The best way to get your bug fixed is to provide a test case,
+and/or steps to reproduce the issue.</p>
+<section id="tips">
+<h3>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">#</a></h3>
+<p>The next commands, might help you answer the previously listed questions:</p>
+<p><strong>To identify the Python version:</strong></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python<span class="w"> </span>--version
+</pre></div>
+</div>
+<p><strong>To identify the system information:</strong></p>
+<div class="tab-set docutils container">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Windows</label><div class="tab-content docutils container">
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\erikingwersen&gt;systeminfo</span>
+<span class="go">Host Name:                 ERIKINGWERS802E</span>
+<span class="go">OS Name:                   Microsoft Windows 11 Home</span>
+<span class="go">OS Manufacturer:           Microsoft Corporation</span>
+<span class="go">OS Configuration:          Standalone Workstation</span>
+<span class="go">OS Build Type:             Multiprocessor Free</span>
+<span class="go">Registered Owner:          Erik Ingwersen</span>
+<span class="go">Registered Organization:</span>
+<span class="go">...</span>
+<span class="go">Time Zone:                 (UTC-03:00) Brasilia</span>
+<span class="go">Total Physical Memory:     8,173 MB</span>
+<span class="go">Available Physical Memory: 3,954 MB</span>
+<span class="go">Virtual Memory: Max Size:  12,525 MB</span>
+<span class="go">Virtual Memory: Available: 7,913 MB</span>
+<span class="go">Virtual Memory: In Use:    4,612 MB</span>
+<span class="go">Page File Location(s):     C:\pagefile.sys</span>
+<span class="go">Domain:                    WORKGROUP</span>
+<span class="go">Logon Server:              \\ERIKINGWERS802E</span>
+<span class="go">Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.</span>
+</pre></div>
+</div>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Unix (MacOS / Linux)</label><div class="tab-content docutils container">
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>system_profiler<span class="w"> </span>SPSoftwareDataType<span class="w"> </span>SPHardwareDataType
+<span class="go">Software:</span>
+
+<span class="go">    System Software Overview:</span>
+
+<span class="go">      System Version: macOS 12.2.1</span>
+<span class="go">      Kernel Version: Darwin 21.3.0</span>
+<span class="go">      Boot Volume: Macintosh HD</span>
+<span class="go">      Boot Mode: Normal</span>
+<span class="go">      Computer Name: MacBook Pro de Erik</span>
+<span class="go">      User Name: Erik Ingwersen (erikingwersen)</span>
+<span class="go">      Secure Virtual Memory: Enabled</span>
+<span class="go">      System Integrity Protection: Enabled</span>
+<span class="go">      Time since boot: 13 days 10:54</span>
+
+<span class="go">Hardware:</span>
+
+<span class="go">    Hardware Overview:</span>
+
+<span class="go">      Model Name: MacBook Pro</span>
+<span class="go">      Model Identifier: MacBookPro16,1</span>
+<span class="go">      Processor Name: 8-Core Intel Core i9</span>
+<span class="go">      Processor Speed: 2.4 GHz</span>
+<span class="go">      Number of Processors: 1</span>
+<span class="go">      Total Number of Cores: 8</span>
+<span class="go">      L2 Cache (per Core): 256 KB</span>
+<span class="go">      L3 Cache: 16 MB</span>
+<span class="go">      Hyper-Threading Technology: Enabled</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>To identify the project version:</strong></p>
+<p>To identify the package version you’re using, enter your Python environment,
+import the package and finally, access the <code class="docutils literal notranslate"><span class="pre">__version__</span></code> attribute from the package:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python
+<span class="go">Python 3.8.8 (default, Apr 13 2021, 12:59:45)</span>
+<span class="go">[Clang 10.0.0 ] :: Anaconda, Inc. on darwin</span>
+<span class="go">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span>
+<span class="go">&gt;&gt;&gt; import pandas</span>
+<span class="go">&gt;&gt;&gt; pandas.__version__</span>
+<span class="go">&#39;1.3.5&#39;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="how-to-request-a-feature">
+<h2>How to request a feature<a class="headerlink" href="#how-to-request-a-feature" title="Permalink to this headline">#</a></h2>
+<p>Request features on the <a class="reference external" href="https://github.com/ingwersen-erik/better-dict/issues">Issue Tracker</a>.</p>
+<p>Even if the project you’re working on is not open-source, and there’s a 99%
+chance that you’ll end up being the one in charge of developing the “new feature”,
+I would still advise you to create a new issue on the <a class="reference external" href="https://github.com/ingwersen-erik/better-dict/issues">Issue Tracker</a>. By mapping
+the work to be done using the <a class="reference external" href="https://github.com/ingwersen-erik/better-dict/issues">Issue Tracker</a>, others from your team will have
+more visibility on what you’re currently working on. This reduces the risk of
+two people unknowingly working on the same issue. Additionally, you can link
+project issues to commits, that might help you later on to categorize different
+commits.</p>
+</section>
+<section id="how-to-set-up-your-development-environment">
+<h2>How to set up your development environment<a class="headerlink" href="#how-to-set-up-your-development-environment" title="Permalink to this headline">#</a></h2>
+<p>You need Python 3.7+ and the following tools:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python-poetry.org/">Poetry</a></p></li>
+<li><p><a class="reference external" href="https://nox.thea.codes/">Nox</a></p></li>
+<li><p><a class="reference external" href="https://nox-poetry.readthedocs.io/">nox-poetry</a></p></li>
+</ul>
+<section id="install-poetry">
+<h3>Install Poetry<a class="headerlink" href="#install-poetry" title="Permalink to this headline">#</a></h3>
+<p>If you don’t have Poetry installed, please refer to the following
+<a class="reference external" href="https://python-poetry.org/docs/#installation">guide</a>, for instructions on how
+to install it.</p>
+</section>
+<section id="install-better-dict">
+<h3>Install <em>Better Dict</em><a class="headerlink" href="#install-better-dict" title="Permalink to this headline">#</a></h3>
+<p>Install the package with development requirements:</p>
+<div class="tab-set docutils container">
+<input checked="True" class="tab-input" id="tab-set--1-input--1" name="tab-set--1" type="radio"><label class="tab-label" for="tab-set--1-input--1">Poetry</label><div class="tab-content docutils container">
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>poetry<span class="w"> </span>install
+</pre></div>
+</div>
+</div>
+<input class="tab-input" id="tab-set--1-input--2" name="tab-set--1" type="radio"><label class="tab-label" for="tab-set--1-input--2">Pip</label><div class="tab-content docutils container">
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="run-interactive-session">
+<h3>Run Interactive Session<a class="headerlink" href="#run-interactive-session" title="Permalink to this headline">#</a></h3>
+<p>You can now run an interactive Python session, or the command-line interface:</p>
+<div class="tab-set docutils container">
+<input checked="True" class="tab-input" id="tab-set--2-input--1" name="tab-set--2" type="radio"><label class="tab-label" for="tab-set--2-input--1">Poetry</label><div class="tab-content docutils container">
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>poetry<span class="w"> </span>run<span class="w"> </span>python
+<span class="gp">$ </span>poetry<span class="w"> </span>run<span class="w"> </span>better-dict
+</pre></div>
+</div>
+</div>
+<input class="tab-input" id="tab-set--2-input--2" name="tab-set--2" type="radio"><label class="tab-label" for="tab-set--2-input--2">Pip</label><div class="tab-content docutils container">
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python
+<span class="gp">$ </span>python<span class="w"> </span>better-dict
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="how-to-test-the-project">
+<h2>How to test the project<a class="headerlink" href="#how-to-test-the-project" title="Permalink to this headline">#</a></h2>
+<p>Run the full test suite:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox
+</pre></div>
+</div>
+<p>List the available <a class="reference external" href="https://nox.thea.codes/">Nox</a> sessions:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox<span class="w"> </span>--list-sessions
+</pre></div>
+</div>
+<p>You can also run a specific <a class="reference external" href="https://nox.thea.codes/">Nox</a> session. For example, invoke the unit test suite like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox<span class="w"> </span>--session<span class="o">=</span>tests
+</pre></div>
+</div>
+<p>Unit tests are located in the <em>tests</em> directory, and are written using the <a class="reference external" href="https://pytest.readthedocs.io/">pytest</a> testing framework.</p>
+</section>
+<section id="how-to-submit-changes">
+<h2>How to submit changes<a class="headerlink" href="#how-to-submit-changes" title="Permalink to this headline">#</a></h2>
+<p>Open a <a class="reference external" href="https://github.com/ingwersen-erik/better-dict/pulls">pull request</a> to submit changes to this project.</p>
+<p>Your pull request needs to meet the following guidelines for acceptance:</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="https://nox.thea.codes/">Nox</a> test suite must pass <strong>without errors and warnings.</strong></p></li>
+<li><p>Include unit tests. This project maintains 100% code coverage.</p></li>
+<li><p>If your changes add functionality, update the documentation accordingly.</p></li>
+</ul>
+<p>Feel free to submit early, though—we can always iterate on this.</p>
+<p>To run linting and code formatting checks before committing your change, you can
+install pre-commit as a Git hook by running the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nox<span class="w"> </span>--session<span class="o">=</span>pre-commit<span class="w"> </span>--<span class="w"> </span>install
+</pre></div>
+</div>
+<p>It is recommended to open an issue before starting work on anything. This will
+allow a chance to talk it over with the owners and validate your approach.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-report-a-bug">How to report a bug</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-request-a-feature">How to request a feature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-set-up-your-development-environment">How to set up your development environment</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-poetry">Install Poetry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-better-dict">Install <em>Better Dict</em></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#run-interactive-session">Run Interactive Session</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-test-the-project">How to test the project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-submit-changes">How to submit changes</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="_sources/contributing.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Erik Ingwersen.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.2.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
