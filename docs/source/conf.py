@@ -2,7 +2,7 @@
 import sys
 import os
 from pathlib import Path
-from dotenv import load_dotenv, find_dotenv
+# from dotenv import load_dotenv, find_dotenv
 import importlib
 
 try:
@@ -12,12 +12,12 @@ except ImportError:
 else:
     img_ext = 'sphinx.ext.imgmath'
 
-load_dotenv(find_dotenv())
+# load_dotenv(find_dotenv())
 package_dir = os.environ.get('PACKAGE_DIRECTORY', None)
 if package_dir is None:
     project_name = "better-dict"
     max_parents = 2
-    package_dir = Path('../').resolve()
+    package_dir = Path('../../').resolve()
     while package_dir.name != project_name and max_parents > 0:
         package_dir = package_dir.parent
         max_parents -= 1
@@ -28,9 +28,10 @@ package_dir = package_dir.joinpath('src')
 sys.path.insert(0, str(package_dir))
 
 package_name = "better_dict"
-my_package = importlib.import_module(package_name)
+# import better_dict as my_package
+# my_package = importlib.import_module(package_name)
 
-version = getattr(my_package, '__version__')  # noqa
+# version = getattr(my_package, '__version__')  # noqa
 numpydoc_xref_param_type = True
 numpydoc_xref_ignore = {'optional', 'type_without_description', 'BadException'}
 numpydoc_show_class_members = False

@@ -1,7 +1,10 @@
-furo
+./dist/better_dict-0.0.1-py3-none-any.whl
+sphinx==5.0
+pygments==2.7
+snowballstemmer==2.2.0
+packaging==22.0
+sphinx-inline-tabs
 sphinx-click
 pydata-sphinx-theme
-sphinx-inline-tabs
 numpydoc==1.2.0
-myst_parser==0.17.0
-sphinx==4.4.0
+myst-parser

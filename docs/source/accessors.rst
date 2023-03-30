@@ -6,3 +6,4 @@ index notation, and finding keys based on their values.
 
 .. automodule:: better_dict.accessors
    :members:
+   :noindex:

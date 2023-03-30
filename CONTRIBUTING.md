@@ -2,10 +2,6 @@
 
 This section specifies the **contributing guidelines** for *Better Dict* project.
 
-This open-source project distributed under the [MIT License](./LICENSE).
-All contributions in the form of bug reports, feature requests, and pull
-requests are welcome.
-
 Here is a list of important resources for contributors:
 
 *   [Source Code]
