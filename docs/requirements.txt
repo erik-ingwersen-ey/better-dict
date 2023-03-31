@@ -1,6 +1,6 @@
 ./dist/better_dict-0.0.1-py3-none-any.whl
 sphinx==5.0
-pygments==2.7
+pygments==2.14.0
 snowballstemmer==2.2.0
 packaging==23.0
 sphinx-inline-tabs
