@@ -1,6 +1,7 @@
 ![](docs/_static/EY_logo_5.gif)
 
-# Better Dict
+Better Dict
+===========
 
 [![PyPI](https://img.shields.io/pypi/v/better-dict.svg)][pypi_]
 [![Status](https://img.shields.io/pypi/status/better-dict.svg)][status]
@@ -27,21 +28,64 @@
 
 [black]: https://github.com/psf/black
 
-## Description
+# Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Documentation](#documentation) 
+- [Quickstart](#quickstart)
+- [Q&A](#q&a)
+- [Contributing](#contributing)
+- [License](#license)
+
+# Better Dict
 
 Python dictionary on steroids. The custom dictionary is inspired in
 by the functionalities that [pandas](https://pandas.pydata.org/) offers in
-their `DataFrame` and `Series` classes.
+their `DataFrame` and `Series` classes. Head over to the [Quickstart](#quickstart)
+section for examples of what it can do.
 
 ***
 
 ## Installation
+
+### Install directly from PyPi
 
 To install **Better Dict**, execute the command:
 
 ```console
 $ pip install better-dict
 ```
+
+### Install Manually
+
+Alternatively, you can also install the package by cloning this repository and performing a local `pip install`:
+
+```console
+$ git clone https://github.com/erik-ingwersen-ey/better-dict.git
+```
+
+Then, navigate to the cloned repository:
+
+```console
+$ cd better-dict
+```
+
+Finally, install the package executing the following command:
+
+```console
+$ pip install .
+```
+
+Or, to install it in development mode, include the optional `-e` tag to the previous command:
+
+```console
+$ pip install -e .
+```
+
+## Documentation
+
+Read the full documentation at [Better-dict documentation](https://erik-ingwersen-ey.github.io/better-dict/)
 
 ## Quickstart
 
@@ -90,7 +134,11 @@ d.to_joblib("d.joblib")
 d = bd.BetterDict.from_joblib("d.joblib")
 ```
 
+***
+
 ## Q&A
+
+Here are the answers for some common questions about `better-dict` that you might have:
 
 ### 1. What is the ``BetterDict`` class and what additional functionality does it provide?
 
@@ -146,16 +194,19 @@ structures, such as pandas DataFrames, pandas Series, numpy arrays, and lists:
 
 These methods facilitate easy conversion between different data structures and ``BetterDict``.
 
+***
 
 ## Contributing
 
 If you want to contribute to **Better Dict**,
-please read the [Contributor Guide](./CONTRIBUTING.md).
+please read the [Contributor Guide](./CONTRIBUTING.md)
+for additional information on how you can contribute to this project.
 
 ## License
 
 Distributed under the terms of the [MIT License](./LICENSE),
-*Better Dict* is free and open source software.
+*Better Dict* is free and open source software. We do not provide
+guarantees nor custom support for it, use it at your own risk.
 
 <!-- github-only -->
 
