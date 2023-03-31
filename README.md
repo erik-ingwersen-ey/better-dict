@@ -30,13 +30,15 @@ Better Dict
 
 # Contents
 
-- [Description](#description)
+- [Description](#better-dict)
 - [Installation](#installation)
 - [Documentation](#documentation) 
 - [Quickstart](#quickstart)
-- [Q&A](#q&a)
+- [Q&A](#qa)
 - [Contributing](#contributing)
 - [License](#license)
+
+
 
 # Better Dict
 
@@ -136,7 +138,7 @@ d = bd.BetterDict.from_joblib("d.joblib")
 
 ***
 
-## Q&A
+## <a name="qa">Q&A</a>
 
 Here are the answers for some common questions about `better-dict` that you might have:
 
