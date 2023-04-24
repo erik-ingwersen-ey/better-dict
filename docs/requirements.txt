@@ -1,5 +1,5 @@
 ./dist/better_dict-0.0.1-py3-none-any.whl
-sphinx==5.0
+sphinx==6.2.0
 pygments==2.7
 snowballstemmer==2.2.0
 packaging==23.0
