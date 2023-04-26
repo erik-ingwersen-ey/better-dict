@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>Contributor Guide &#8212; Better Dict  documentation</title>
   
   
@@ -37,10 +38,8 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contributing';</script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -460,7 +459,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="section" id="contributor-guide">
+  <section id="contributor-guide">
 <h1>Contributor Guide<a class="headerlink" href="#contributor-guide" title="Permalink to this heading">#</a></h1>
 <p>This section specifies the <strong>contributing guidelines</strong> for <em>Better Dict</em> project.</p>
 <p>Here is a list of important resources for contributors:</p>
@@ -470,7 +469,7 @@ document.write(`
 <li><p><a class="reference external" href="https://github.com/ingwersen-erik/better-dict/issues">Issue Tracker</a></p></li>
 <li><p><a class="reference internal" href="codeofconduct.html"><span class="std std-doc">Code of Conduct</span></a></p></li>
 </ul>
-<div class="section" id="how-to-report-a-bug">
+<section id="how-to-report-a-bug">
 <h2>How to report a bug<a class="headerlink" href="#how-to-report-a-bug" title="Permalink to this heading">#</a></h2>
 <p>Report bugs on the <a class="reference external" href="https://github.com/ingwersen-erik/better-dict/issues">Issue Tracker</a>.</p>
 <p>To make it easier to other teammates to reproduce and identify the root-cause
@@ -485,7 +484,7 @@ whenever applicable:</p>
 </ul>
 <p>The best way to get your bug fixed is to provide a test case,
 and/or steps to reproduce the issue.</p>
-<div class="section" id="tips">
+<section id="tips">
 <h3>Tips<a class="headerlink" href="#tips" title="Permalink to this heading">#</a></h3>
 <p>The next commands, might help you answer the previously listed questions:</p>
 <p><strong>To identify the Python version:</strong></p>
@@ -562,9 +561,9 @@ import the package and finally, access the <code class="docutils literal notrans
 <span class="go">&#39;1.3.5&#39;</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="how-to-request-a-feature">
+</section>
+</section>
+<section id="how-to-request-a-feature">
 <h2>How to request a feature<a class="headerlink" href="#how-to-request-a-feature" title="Permalink to this heading">#</a></h2>
 <p>Request features on the <a class="reference external" href="https://github.com/ingwersen-erik/better-dict/issues">Issue Tracker</a>.</p>
 <p>Even if the project you’re working on is not open-source, and there’s a 99%
@@ -575,8 +574,8 @@ more visibility on what you’re currently working on. This reduces the risk of
 two people unknowingly working on the same issue. Additionally, you can link
 project issues to commits, that might help you later on to categorize different
 commits.</p>
-</div>
-<div class="section" id="how-to-set-up-your-development-environment">
+</section>
+<section id="how-to-set-up-your-development-environment">
 <h2>How to set up your development environment<a class="headerlink" href="#how-to-set-up-your-development-environment" title="Permalink to this heading">#</a></h2>
 <p>You need Python 3.7+ and the following tools:</p>
 <ul class="simple">
@@ -584,13 +583,13 @@ commits.</p>
 <li><p><a class="reference external" href="https://nox.thea.codes/">Nox</a></p></li>
 <li><p><a class="reference external" href="https://nox-poetry.readthedocs.io/">nox-poetry</a></p></li>
 </ul>
-<div class="section" id="install-poetry">
+<section id="install-poetry">
 <h3>Install Poetry<a class="headerlink" href="#install-poetry" title="Permalink to this heading">#</a></h3>
 <p>If you don’t have Poetry installed, please refer to the following
 <a class="reference external" href="https://python-poetry.org/docs/#installation">guide</a>, for instructions on how
 to install it.</p>
-</div>
-<div class="section" id="install-better-dict">
+</section>
+<section id="install-better-dict">
 <h3>Install <em>Better Dict</em><a class="headerlink" href="#install-better-dict" title="Permalink to this heading">#</a></h3>
 <p>Install the package with development requirements:</p>
 <div class="tab-set docutils">
@@ -605,8 +604,8 @@ to install it.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="run-interactive-session">
+</section>
+<section id="run-interactive-session">
 <h3>Run Interactive Session<a class="headerlink" href="#run-interactive-session" title="Permalink to this heading">#</a></h3>
 <p>You can now run an interactive Python session, or the command-line interface:</p>
 <div class="tab-set docutils">
@@ -623,9 +622,9 @@ to install it.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="how-to-test-the-project">
+</section>
+</section>
+<section id="how-to-test-the-project">
 <h2>How to test the project<a class="headerlink" href="#how-to-test-the-project" title="Permalink to this heading">#</a></h2>
 <p>Run the full test suite:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nox
@@ -640,8 +639,8 @@ to install it.</p>
 </pre></div>
 </div>
 <p>Unit tests are located in the <em>tests</em> directory, and are written using the <a class="reference external" href="https://pytest.readthedocs.io/">pytest</a> testing framework.</p>
-</div>
-<div class="section" id="how-to-submit-changes">
+</section>
+<section id="how-to-submit-changes">
 <h2>How to submit changes<a class="headerlink" href="#how-to-submit-changes" title="Permalink to this heading">#</a></h2>
 <p>Open a <a class="reference external" href="https://github.com/ingwersen-erik/better-dict/pulls">pull request</a> to submit changes to this project.</p>
 <p>Your pull request needs to meet the following guidelines for acceptance:</p>
@@ -658,8 +657,8 @@ install pre-commit as a Git hook by running the following command:</p>
 </div>
 <p>It is recommended to open an issue before starting work on anything. This will
 allow a chance to talk it over with the owners and validate your approach.</p>
-</div>
-</div>
+</section>
+</section>
 
 
                 </article>
@@ -746,7 +745,7 @@ allow a chance to talk it over with the owners and validate your approach.</p>
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.2.1.
     <br/>
   </p>
 </div>

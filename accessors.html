@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>Accessors &#8212; Better Dict  documentation</title>
   
   
@@ -37,10 +38,8 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'accessors';</script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -461,12 +460,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="section" id="accessors">
+  <section id="accessors">
 <h1>Accessors<a class="headerlink" href="#accessors" title="Permalink to this heading">#</a></h1>
 <p>This module defines the accessors, that enable dictionary manipulations using
 index notation, and finding keys based on their values.</p>
 <p>Accessor classes for <a class="reference internal" href="core.html#better_dict.core.BetterDict" title="better_dict.core.BetterDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">better_dict.core.BetterDict</span></code></a> dictionary.</p>
-<div class="section" id="classes">
+<section id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">#</a></h2>
 <p>This module defines the following classes:</p>
 <ul class="simple">
@@ -499,12 +498,13 @@ you must define the following properties:</p>
 <code class="xref py py-class docutils literal notranslate"><span class="pre">VLoc</span></code>, the dictionary keys and values can be accessed by the
 <code class="xref py py-class docutils literal notranslate"><span class="pre">ILoc</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">VLoc</span></code> classes.</p>
 </div>
+</section>
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ILoc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/accessors.html#ILoc"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Class for manipulating <a class="reference internal" href="core.html#better_dict.core.BetterDict" title="better_dict.core.BetterDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">BetterDict</span></code></a> using index notation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>data</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">BetterDict</span></code>) – Dictionary to access as a <a class="reference internal" href="core.html#better_dict.core.BetterDict" title="better_dict.core.BetterDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">BetterDict</span></code></a> object.</p>
 </dd>
 </dl>
@@ -513,10 +513,10 @@ you must define the following properties:</p>
 <span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="reference internal" href="_modules/better_dict/accessors.html#ILoc.__getitem__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Get the value of the dictionary at the given index(es).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>index</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> | </em><em>Iterable</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>]</em>) – </p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>Any</p>
 </dd>
 </dl>
@@ -527,20 +527,20 @@ you must define the following properties:</p>
 <span class="sig-name descname"><span class="pre">__setitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="reference internal" href="_modules/better_dict/accessors.html#ILoc.__setitem__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Set the value(s) of the dictionary at the given index(es).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>index</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> | </em><em>Iterable</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>]</em>) – </p></li>
 <li><p><strong>value</strong> (<em>Any</em><em> | </em><em>Iterable</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="field-list simple">
-<dt class="field-odd">Variables</dt>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>data</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">BetterDict</span></code>) – Dictionary to access as a <a class="reference internal" href="core.html#better_dict.core.BetterDict" title="better_dict.core.BetterDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">BetterDict</span></code></a> object.</p>
 </dd>
 </dl>
@@ -569,13 +569,13 @@ the values of a <a class="reference internal" href="core.html#better_dict.core.B
 <span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/accessors.html#ILoc.__getitem__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Get the value of the dictionary at the given index(es).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>index</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span> <span class="pre">|</span> <span class="pre">Iterable[int]</span></code>) – Index(es) of the value(s) to get.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Value(s) of the dictionary at the given index(es).</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Any</span></code></p>
 </dd>
 </dl>
@@ -591,13 +591,13 @@ indices and values, for example:</p>
 </pre></div>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>index</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span> <span class="pre">|</span> <span class="pre">Iterable[int]</span></code>) – Index(es) of the value(s) to set.</p></li>
 <li><p><strong>value</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Any</span> <span class="pre">|</span> <span class="pre">Iterable[Any]</span></code>) – Value(s) to set.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
@@ -608,10 +608,10 @@ indices and values, for example:</p>
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em></dt>
 <dd><p>Get the indexes of the dictionary.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Indexes of the dictionary.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List[int]</span></code></p>
 </dd>
 </dl>
@@ -624,7 +624,7 @@ indices and values, for example:</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VLoc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/accessors.html#VLoc"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Class for accessing the keys of a dictionary by value.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>data</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">BetterDict</span></code>) – Dictionary to access.</p>
 </dd>
 </dl>
@@ -647,13 +647,13 @@ by value. It does not allow manipulations of the dictionary keys or values.</p>
 <span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/accessors.html#VLoc.__getitem__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Get the keys of the dictionary that match the value(s).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>value</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span> <span class="pre">|</span> <span class="pre">Iterable[object]</span></code>) – Value(s) to match.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>keys(s) of the dictionary that match the value(s).</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List[Hashable]</span></code></p>
 </dd>
 </dl>
@@ -664,10 +664,10 @@ by value. It does not allow manipulations of the dictionary keys or values.</p>
 <span class="sig-name descname"><span class="pre">inverse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/accessors.html#VLoc.inverse"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Get the inverse of the dictionary.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Inverse of the dictionary.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">BetterDict</span></code></p>
 </dd>
 </dl>
@@ -675,8 +675,7 @@ by value. It does not allow manipulations of the dictionary keys or values.</p>
 
 </dd></dl>
 
-</div>
-</div>
+</section>
 
 
                 </article>
@@ -760,7 +759,7 @@ by value. It does not allow manipulations of the dictionary keys or values.</p>
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.2.1.
     <br/>
   </p>
 </div>

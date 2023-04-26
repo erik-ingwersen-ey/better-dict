@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>I/O &#8212; Better Dict  documentation</title>
   
   
@@ -37,10 +38,8 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'io';</script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -462,10 +461,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="section" id="i-o">
+  <section id="i-o">
 <h1>I/O<a class="headerlink" href="#i-o" title="Permalink to this heading">#</a></h1>
 <p>This module contains mixin classes for saving and loading data from files.</p>
-<div class="section" id="supported-formats">
+<section id="supported-formats">
 <h2>Supported formats<a class="headerlink" href="#supported-formats" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Pickle:</strong> save and load Python objects to and from pickle files.</p></li>
@@ -475,7 +474,7 @@ document.write(`
 <p>This module defines classes that serve as mixins for other classes.
 These classes extensions inject methods that allow performing I/O
 operations on objects.</p>
-<div class="section" id="classes">
+<section id="classes">
 <h3>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">#</a></h3>
 <p>This module defines the following classes:</p>
 <ul class="simple">
@@ -506,6 +505,7 @@ prefix, and the loading method, using the <code class="docutils literal notransl
 The loading methods are class methods, so they can be called directly from the
 class, without the need to instantiate it first.</p>
 </div>
+</section>
 <dl class="py class">
 <dt class="sig sig-object py" id="better_dict.io.JoblibIOMixin">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JoblibIOMixin</span></span><a class="reference internal" href="_modules/better_dict/io.html#JoblibIOMixin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.io.JoblibIOMixin" title="Permalink to this definition">#</a></dt>
@@ -521,10 +521,10 @@ The methods implemented in this class are:</p>
 <span class="sig-name descname"><span class="pre">to_joblib</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/io.html#JoblibIOMixin.to_joblib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.io.JoblibIOMixin.to_joblib" title="Permalink to this definition">#</a></dt>
 <dd><p>Save the object to a joblib file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
@@ -535,10 +535,10 @@ The methods implemented in this class are:</p>
 <span class="sig-name descname"><span class="pre">from_joblib</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/io.html#JoblibIOMixin.from_joblib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.io.JoblibIOMixin.from_joblib" title="Permalink to this definition">#</a></dt>
 <dd><p>Load the object from a joblib file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#better_dict.io.JoblibIOMixin" title="better_dict.io.JoblibIOMixin"><em>JoblibIOMixin</em></a></p>
 </dd>
 </dl>
@@ -559,16 +559,16 @@ The methods implemented in this class are:</p>
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_joblib</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/io.html#JoblibIOMixin.from_joblib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id0" title="Permalink to this definition">#</a></dt>
 <dd><p>Load the object from a <code class="docutils literal notranslate"><span class="pre">joblib</span></code> file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – Path to the <code class="docutils literal notranslate"><span class="pre">joblib</span></code> file.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Object loaded from the <code class="docutils literal notranslate"><span class="pre">joblib</span></code> file.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#better_dict.io.JoblibIOMixin" title="better_dict.io.JoblibIOMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">JoblibIOMixin</span></code></a></p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If the path is not a file.</p>
 </dd>
 </dl>
@@ -579,13 +579,13 @@ The methods implemented in this class are:</p>
 <span class="sig-name descname"><span class="pre">to_joblib</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/io.html#JoblibIOMixin.to_joblib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id1" title="Permalink to this definition">#</a></dt>
 <dd><p>Save the object to a <code class="docutils literal notranslate"><span class="pre">joblib</span></code> file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – Path to the <code class="docutils literal notranslate"><span class="pre">joblib</span></code> file.</p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If the path refers to a directory.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>None</p>
 </dd>
 </dl>
@@ -623,10 +623,10 @@ The methods implemented in this class are:</p>
 <span class="sig-name descname"><span class="pre">__getstate__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/io.html#PicklerMixin.__getstate__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.io.PicklerMixin.__getstate__" title="Permalink to this definition">#</a></dt>
 <dd><p>Get the state of the object for pickling.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>State of the object for pickling.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict[str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Any]</span></code></p>
 </dd>
 </dl>
@@ -637,7 +637,7 @@ The methods implemented in this class are:</p>
 <span class="sig-name descname"><span class="pre">__setstate__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/io.html#PicklerMixin.__setstate__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.io.PicklerMixin.__setstate__" title="Permalink to this definition">#</a></dt>
 <dd><p>Set the state of the object after unpickling.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>state</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict[str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Any]</span></code>) – State of the object after unpickling.</p>
 </dd>
 </dl>
@@ -648,16 +648,16 @@ The methods implemented in this class are:</p>
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_pickle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/io.html#PicklerMixin.from_pickle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.io.PicklerMixin.from_pickle" title="Permalink to this definition">#</a></dt>
 <dd><p>Load the object from a pickle file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – Path to the pickle file.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Object loaded from the pickle file.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#better_dict.io.PicklerMixin" title="better_dict.io.PicklerMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">PicklerMixin</span></code></a></p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If the path is not a file.</p>
 </dd>
 </dl>
@@ -668,10 +668,10 @@ The methods implemented in this class are:</p>
 <span class="sig-name descname"><span class="pre">to_pickle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/io.html#PicklerMixin.to_pickle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.io.PicklerMixin.to_pickle" title="Permalink to this definition">#</a></dt>
 <dd><p>Save the object to a pickle file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – Path to the pickle file.</p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If the path refers to a directory.</p>
 </dd>
 </dl>
@@ -679,9 +679,8 @@ The methods implemented in this class are:</p>
 
 </dd></dl>
 
-</div>
-</div>
-</div>
+</section>
+</section>
 
 
                 </article>
@@ -732,6 +731,20 @@ The methods implemented in this class are:</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supported-formats">Supported formats</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.io.JoblibIOMixin"><code class="docutils literal notranslate"><span class="pre">JoblibIOMixin</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.io.JoblibIOMixin.to_joblib"><code class="docutils literal notranslate"><span class="pre">JoblibIOMixin.to_joblib()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.io.JoblibIOMixin.from_joblib"><code class="docutils literal notranslate"><span class="pre">JoblibIOMixin.from_joblib()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">JoblibIOMixin.from_joblib()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">JoblibIOMixin.to_joblib()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.io.PicklerMixin"><code class="docutils literal notranslate"><span class="pre">PicklerMixin</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.io.PicklerMixin.__getstate__"><code class="docutils literal notranslate"><span class="pre">PicklerMixin.__getstate__()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.io.PicklerMixin.__setstate__"><code class="docutils literal notranslate"><span class="pre">PicklerMixin.__setstate__()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.io.PicklerMixin.from_pickle"><code class="docutils literal notranslate"><span class="pre">PicklerMixin.from_pickle()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.io.PicklerMixin.to_pickle"><code class="docutils literal notranslate"><span class="pre">PicklerMixin.to_pickle()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -777,7 +790,7 @@ The methods implemented in this class are:</p>
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.2.1.
     <br/>
   </p>
 </div>

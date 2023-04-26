@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>Utils &#8212; Better Dict  documentation</title>
   
   
@@ -37,10 +38,8 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'utils';</script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -462,10 +461,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="section" id="module-better_dict.utils">
+  <section id="module-better_dict.utils">
 <span id="utils"></span><h1>Utils<a class="headerlink" href="#module-better_dict.utils" title="Permalink to this heading">#</a></h1>
 <p>Module defines helper functions for the <code class="docutils literal notranslate"><span class="pre">better_dict</span></code> package.</p>
-<div class="section" id="functions">
+<section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="#better_dict.utils.iterable_not_string" title="better_dict.utils.iterable_not_string"><code class="xref py py-func docutils literal notranslate"><span class="pre">iterable_not_string()</span></code></a>: Check if the value is iterable but not a string.</p></li>
@@ -473,18 +472,19 @@ document.write(`
 <li><p><a class="reference internal" href="#better_dict.utils.make_list" title="better_dict.utils.make_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_list()</span></code></a>: Make a list from the value.</p></li>
 <li><p><a class="reference internal" href="#better_dict.utils.flatten" title="better_dict.utils.flatten"><code class="xref py py-func docutils literal notranslate"><span class="pre">flatten()</span></code></a>: Flatten the iterable object.</p></li>
 </ul>
+</section>
 <dl class="py function">
 <dt class="sig sig-object py" id="better_dict.utils.flatten">
 <span class="sig-name descname"><span class="pre">flatten</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/utils.html#flatten"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.utils.flatten" title="Permalink to this definition">#</a></dt>
 <dd><p>Flatten an arbitrarily nested sequence.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>line</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Any</span></code>) – The possibly nested sequence to flatten.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>flattened</strong> – A generator that yields the flattened sequence.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">generator</span></code></p>
 </dd>
 </dl>
@@ -511,13 +511,13 @@ document.write(`
 <span class="sig-name descname"><span class="pre">iterable_not_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/utils.html#iterable_not_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.utils.iterable_not_string" title="Permalink to this definition">#</a></dt>
 <dd><p>Check if the value is iterable but not a string.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a>) – Value to check.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if the value is iterable but not a string, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
 </dd>
 </dl>
@@ -539,13 +539,13 @@ document.write(`
 <span class="sig-name descname"><span class="pre">make_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/utils.html#make_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.utils.make_list" title="Permalink to this definition">#</a></dt>
 <dd><p>Make a list from the value.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>value</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Any</span></code>) – Value to make a list from.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>List with the value.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List[Any]</span></code></p>
 </dd>
 </dl>
@@ -556,17 +556,17 @@ document.write(`
 <span class="sig-name descname"><span class="pre">same_length</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/better_dict/utils.html#same_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#better_dict.utils.same_length" title="Permalink to this definition">#</a></dt>
 <dd><p>Check if the keys and values have the same length.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>keys</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Any</span></code>) – Keys to check.</p></li>
 <li><p><strong>values</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Any</span></code>) – Values to check.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True if the keys and values are iterables and have the same length,
 False otherwise.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
 </dd>
 </dl>
@@ -583,8 +583,7 @@ False otherwise.</p>
 </div>
 </dd></dl>
 
-</div>
-</div>
+</section>
 
 
                 </article>
@@ -634,6 +633,10 @@ False otherwise.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.utils.flatten"><code class="docutils literal notranslate"><span class="pre">flatten()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.utils.iterable_not_string"><code class="docutils literal notranslate"><span class="pre">iterable_not_string()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.utils.make_list"><code class="docutils literal notranslate"><span class="pre">make_list()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#better_dict.utils.same_length"><code class="docutils literal notranslate"><span class="pre">same_length()</span></code></a></li>
 </ul>
   </nav></div>
 
@@ -677,7 +680,7 @@ False otherwise.</p>
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.2.1.
     <br/>
   </p>
 </div>
