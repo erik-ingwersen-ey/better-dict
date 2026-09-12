@@ -37,7 +37,7 @@ flake8-docstrings = { version = ">=1.6.0", optional = false }
 flake8-rst-docstrings = { version = ">=0.2.5", optional = false }
 flake8-annotations = {version = "^2.7.0", python = ">= 3.6.2", optional = false }
 
-python-dotenv = { version = "^0.19.2", optional = false }
+python-dotenv = { version = "^0.21.0", optional = false }
 joblib = "^1.2.0"
 pandas = "^1.5.3"
 numpy = "^1.24.2"
