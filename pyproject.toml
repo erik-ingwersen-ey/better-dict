@@ -41,7 +41,7 @@ python-dotenv = { version = "^0.19.2", optional = false }
 joblib = "^1.2.0"
 pandas = "^1.5.3"
 numpy = "^1.24.2"
-pytest = "^7.2.2"
+pytest = "^9.0.0"
 
 
 [tool.poetry.dev-dependencies]
